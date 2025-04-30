@@ -31,7 +31,7 @@ export default function RootLayout({
               "@type": "MedicalBusiness",
               name: "MediConnect",
               url: "https://mediconnect.com",
-              logo: "https://mediconnect.com/logo.png",
+              logo: "",
               description:
                 "Find and consult with top doctors online. Book appointments with experienced doctors across various specialties.",
               address: {

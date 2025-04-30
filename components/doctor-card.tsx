@@ -11,13 +11,13 @@ export default function DoctorCard({ doctor }: DoctorCardProps) {
   return (
     <div className="border rounded-lg p-4 flex flex-col md:flex-row gap-4">
       <div className="flex-shrink-0">
-        <Image
+        {/* <Image
           src={doctor.profilePicture || "/placeholder-doctor.png"}
           alt={doctor.name}
           width={100}
           height={100}
           className="rounded-lg object-cover"
-        />
+        /> */}
       </div>
 
       <div className="flex-1">
@@ -55,7 +55,7 @@ export default function DoctorCard({ doctor }: DoctorCardProps) {
             <div className="text-xl font-bold">₹{doctor.consultationFee}</div>
             {doctor.cashback && (
               <div className="flex items-center justify-end text-sm text-gray-600">
-                <Image src="/coin-icon.png" alt="Cashback" width={16} height={16} className="mr-1" />
+                {/* <Image src="/coin-icon.png" alt="Cashback" width={16} height={16} className="mr-1" /> */}
                 <span>₹{doctor.cashback} Cashback</span>
               </div>
             )}
