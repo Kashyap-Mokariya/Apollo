@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       "Find and consult with top general physicians and internal medicine specialists online. Book appointments with experienced doctors.",
   },
   alternates: {
-    canonical: "https://yourdomain.com/doctors/general-physicians",
+    canonical: "https://apollo-six-orcin.vercel.app/doctors/general-physicians",
   },
 }
 

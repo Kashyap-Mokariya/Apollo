@@ -6,7 +6,7 @@ export function GET() {
 Allow: /
 Disallow: /api/
 
-Sitemap: http://localhost:3000/sitemap.xml`,
+Sitemap: https://apollo-six-orcin.vercel.app/sitemap.xml`,
 		{
 			headers: {
 				"Content-Type": "text/plain",

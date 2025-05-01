@@ -30,7 +30,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "MedicalBusiness",
               name: "MediConnect",
-              url: "https://mediconnect.com",
+              url: "https://apollo-six-orcin.vercel.app",
               logo: "",
               description:
                 "Find and consult with top doctors online. Book appointments with experienced doctors across various specialties.",
@@ -43,7 +43,7 @@ export default function RootLayout({
           }}
         />
         {/* Canonical URL */}
-        <link rel="canonical" href="https://mediconnect.com/doctors/general-physicians" />
+        <link rel="canonical" href="https://apollo-six-orcin.vercel.app/doctors/general-physicians" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
