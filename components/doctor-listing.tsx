@@ -8,19 +8,20 @@ import FilterSidebar from "@/components/filter-sidebar"
 import DoctorCard from "@/components/doctor-card"
 import type { Doctor } from "@/types/doctor"
 
+type FilterKeys = "consultMode" | "experience" | "fees" | "language" | "facility"
+
 export default function DoctorListing() {
   const [doctors, setDoctors] = useState<Doctor[]>([])
   const [loading, setLoading] = useState(true)
   const [totalDoctors, setTotalDoctors] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
-  const [filters, setFilters] = useState({
+  const [filters, setFilters] = useState<Record<FilterKeys, string[]>>({
     consultMode: [],
     experience: [],
     fees: [],
     language: [],
     facility: [],
   })
-
   useEffect(() => {
     fetchDoctors()
   }, [currentPage, filters])

@@ -4,14 +4,14 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Header from "@/components/header"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "MediConnect - Find and Consult with Top Doctors Online",
+  title: "Apollo - Find and Consult with Top Doctors Online",
   description:
-    "Find and consult with top doctors online. Book appointments with experienced doctors across various specialties.",
-    generator: 'v0.dev'
+    "Find and consult with top doctors online. Book appointments with experienced doctors across various specialties."
 }
 
 export default function RootLayout({
@@ -49,6 +49,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

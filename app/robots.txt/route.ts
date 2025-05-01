@@ -1,16 +1,16 @@
-import { NextResponse } from "next/server"
+import {NextResponse} from "next/server";
 
-export async function GET() {
-  return new NextResponse(
-    `User-agent: *
+export function GET() {
+	return new NextResponse(
+		`User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://mediconnect.com/sitemap.xml`,
-    {
-      headers: {
-        "Content-Type": "text/plain",
-      },
-    },
-  )
+Sitemap: http://localhost:3000/sitemap.xml`,
+		{
+			headers: {
+				"Content-Type": "text/plain",
+			},
+		}
+	);
 }

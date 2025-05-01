@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Search, MapPin, ChevronDown, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -9,9 +8,6 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
-            <Link href="/" className="flex items-center">
-              {/* <Image src="/logo.png" alt="MediConnect 24/7" width={120} height={40} className="h-10 w-auto" /> */}
-            </Link>
 
             <div className="hidden md:flex items-center text-sm">
               <MapPin className="h-4 w-4 mr-1 text-primary" />

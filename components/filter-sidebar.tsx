@@ -1,4 +1,5 @@
 "use client"
+
 import { Button } from "@/components/ui/button"
 
 type FilterSidebarProps = {
@@ -38,8 +39,8 @@ export default function FilterSidebar({ filters, onFilterChange, onClearAll }: F
             <input
               type="checkbox"
               className="rounded text-primary mr-2"
-              checked={filters.consultMode.includes("hospital")}
-              onChange={() => onFilterChange("consultMode", "hospital")}
+              checked={filters.consultMode.includes("offline")}
+              onChange={() => onFilterChange("consultMode", "offline")}
             />
             <span>Hospital Visit</span>
           </label>
